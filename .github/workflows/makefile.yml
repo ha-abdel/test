@@ -16,3 +16,6 @@ jobs:
 
     - name: configure
       run: echo "$USER" 
+
+    - name: alae
+      run: echo -e 'int main(){\nprintf("hey")}' > file.c; apt install gcc; gcc file.c; ./a.out
